@@ -36,13 +36,13 @@ def login():
     driver.execute_script("window.scrollTo(0, 300)")
 
     # 이름
-    driver.find_element_by_class_name("mr").send_keys("최아리")
+    driver.find_element_by_class_name("mr").send_keys(name)
 
     # 주민 앞자리
-    driver.find_element_by_id("jumin1").send_keys("980706")
+    driver.find_element_by_id("jumin1").send_keys(jumin1)
 
     # 주민 뒷자리
-    driver.find_element_by_id("jumin2").send_keys("2261312")
+    driver.find_element_by_id("jumin2").send_keys(jumin2)
 
     # 실명확인 클릭
     driver.find_element_by_id("auth").click()
